@@ -46,6 +46,9 @@
             </li>
           </ul>
         </nav>
+        <svg width="24" height="24" class="hamburger-menu">
+          <use href="./images/icons.svg#icon-hamburger-menu"></use>
+        </svg>
         <!-- Контакти -->
         <address class="adress">
           <ul class="header-navigation-contacts">
@@ -62,18 +65,88 @@
           </ul>
         </address>
       </div>
+      <!-- Mobile menu -->
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="pop-up-close-btn">
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-navigation-list">
+              <li class="mobile-menu-navigation-list-item">
+                <a
+                  href="./index.html"
+                  class="mobile-menu-navigation-list-link current"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-navigation-list-item">
+                <a href="" class="">Portfolio</a>
+              </li>
+              <li class="mobile-menu-navigation-list-item">
+                <a href="" class="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul class="mobile-menu-adress-list">
+              <li class="mobile-menu-adress-list-item">
+                <a href="mailto:info@devstudio.com" class="info-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-menu-adress-list-item">
+                <a href="tel:+110001111111" class="info-link current"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+            <div class="mobile-menu-links">
+              <p class="footer-title">Social media</p>
+              <ul class="social-links-footer-list">
+                <li class="social-links-footer-list-item">
+                  <a href="#" class="footer-social-links">
+                    <svg class="svg-icons-footer" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-footer-list-item">
+                  <a href="#" class="footer-social-links">
+                    <svg class="svg-icons-footer" width="24" height="24">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-footer-list-item">
+                  <a href="#" class="footer-social-links">
+                    <svg class="svg-icons-footer" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-links-footer-list-item">
+                  <a href="#" class="footer-social-links">
+                    <svg class="svg-icons-footer" width="24" height="24">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </address>
+        </div>
+      </div>
     </header>
     <main>
       <!-- Hero section 1 -->
       <section id="hero-section" class="hero-section">
-        <div class="container">
-          <h1 class="hero-section-title">
-            Effective Solutions for Your Business
-          </h1>
-          <button type="button" class="hero-section-button">
-            Order Service
-          </button>
-        </div>
+        <h1 class="hero-section-title">
+          Effective Solutions for Your Business
+        </h1>
+        <button type="button" class="hero-section-button">Order Service</button>
       </section>
       <!-- description section 2 -->
       <section id="description" class="description-section">
@@ -133,15 +206,14 @@
       </section>
       <!-- Our Team section 3 -->
       <section id="team-section" class="team-section">
-        <div class="container">
+        <div class="container team-section-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="section-team-list">
             <li class="team-list-item">
               <img
+                srcset="/images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x"
                 src="images/img-1.jpg"
                 alt="Image"
-                width="264"
-                height="260"
                 class="section-team-list-image"
               />
               <div class="team-list-text-div">
@@ -181,10 +253,9 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="/images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x"
                 src="images/img-2.jpg"
                 alt="Image"
-                width="264"
-                height="260"
                 class="section-team-list-image"
               />
               <div class="team-list-text-div">
@@ -224,10 +295,9 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="/images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x"
                 src="images/img-3.jpg"
                 alt="Image"
-                width="264"
-                height="260"
                 class="section-team-list-image"
               />
               <div class="team-list-text-div">
@@ -267,10 +337,9 @@
             </li>
             <li class="team-list-item">
               <img
+                srcset="/images/img-4.jpg 1x, ./images/img-4@2x.jpg 2x"
                 src="images/img-4.jpg"
                 alt="Image"
-                width="264"
-                height="260"
                 class="section-team-list-image"
               />
               <div class="team-list-text-div">
@@ -319,10 +388,9 @@
             <li class="portfolio-list-item">
               <div class="box">
                 <img
+                  srcset="./images/image1.jpg 1x, ./images/image1@2x.jpg 2x"
                   src="./images/image1.jpg"
                   alt="Photo"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -331,17 +399,18 @@
                 </p>
               </div>
               <div class="description-list-item-text">
-                <h3 class="description-list-title">Banking App</h3>
-                <p class="description-list-text">App</p>
+                <h3 class="description-list-title portfolio-list-title">
+                  Banking App
+                </h3>
+                <p class="description-list-text portfolio-list-text">App</p>
               </div>
             </li>
             <li class="portfolio-list-item">
               <div class="box">
                 <img
+                  srcset="./images/image2.jpg 1x, ./images/image2@2x.jpg 2x"
                   src="./images/image2.jpg"
                   alt="Photo"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -350,17 +419,20 @@
                 </p>
               </div>
               <div class="description-list-item-text">
-                <h3 class="description-list-title">Cashless Payment</h3>
-                <p class="description-list-text">Marketing</p>
+                <h3 class="description-list-title portfolio-list-title">
+                  Cashless Payment
+                </h3>
+                <p class="description-list-text portfolio-list-text">
+                  Marketing
+                </p>
               </div>
             </li>
             <li class="portfolio-list-item">
               <div class="box">
                 <img
+                  srcset="./images/image3.jpg 1x, ./images/image3@2x.jpg 2x"
                   src="./images/image3.jpg"
                   alt="Photo"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -369,17 +441,18 @@
                 </p>
               </div>
               <div class="description-list-item-text">
-                <h3 class="description-list-title">Meditation App</h3>
-                <p class="description-list-text">App</p>
+                <h3 class="description-list-title portfolio-list-title">
+                  Meditation App
+                </h3>
+                <p class="description-list-text portfolio-list-text">App</p>
               </div>
             </li>
             <li class="portfolio-list-item">
               <div class="box">
                 <img
+                  srcset="./images/image4.jpg 1x, ./images/image4@2x.jpg 2x"
                   src="./images/image4.jpg"
                   alt="Photo"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -388,17 +461,20 @@
                 </p>
               </div>
               <div class="description-list-item-text">
-                <h3 class="description-list-title">Taxi Service</h3>
-                <p class="description-list-text">Marketing</p>
+                <h3 class="description-list-title portfolio-list-title">
+                  Taxi Service
+                </h3>
+                <p class="description-list-text portfolio-list-text">
+                  Marketing
+                </p>
               </div>
             </li>
             <li class="portfolio-list-item">
               <div class="box">
                 <img
+                  srcset="./images/image5.jpg 1x, ./images/image5@2x.jpg 2x"
                   src="./images/image5.jpg"
                   alt="Photo"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -407,17 +483,18 @@
                 </p>
               </div>
               <div class="description-list-item-text">
-                <h3 class="description-list-title">Screen Illustrations</h3>
-                <p class="description-list-text">Design</p>
+                <h3 class="description-list-title portfolio-list-title">
+                  Screen Illustrations
+                </h3>
+                <p class="description-list-text portfolio-list-text">Design</p>
               </div>
             </li>
             <li class="portfolio-list-item">
               <div class="box">
                 <img
+                  srcset="./images/image6.jpg 1x, ./images/image6@2x.jpg 2x"
                   src="./images/image6.jpg"
                   alt="Photo"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -426,8 +503,12 @@
                 </p>
               </div>
               <div class="description-list-item-text">
-                <h3 class="description-list-title">Online Courses</h3>
-                <p class="description-list-text">Marketing</p>
+                <h3 class="description-list-title portfolio-list-title">
+                  Online Courses
+                </h3>
+                <p class="description-list-text portfolio-list-text">
+                  Marketing
+                </p>
               </div>
             </li>
           </ul>
@@ -500,7 +581,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal-window">
         <button type="button" class="pop-up-close-btn">
           <svg width="8" height="8" class="pop-up-button-svg-icon">
@@ -570,10 +651,11 @@
             <label for="user-privacy" class="checkbox-privacy-text">
               <span class="form-own-checkbox">
                 <svg width="10" height="8">
-                  <use href="./images/icons.svg#icon-tick"></use>
-                </svg> </span
-              >I accept the terms and conditions of the
-              <a class="privacy-policy">Privacy Policy</a></label
+                  <use href="./images/icons.svg#icon-tick"></use></svg></span
+              ><span
+                >I accept the terms and conditions of the
+                <a class="privacy-policy">Privacy Policy</a></span
+              ></label
             >
           </div>
           <button type="submit" class="modal-button">Send</button>
