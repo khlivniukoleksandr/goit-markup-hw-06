@@ -35,7 +35,7 @@ a {
 }
 
 .container {
-  max-width: 1158px;
+  max-width: 320px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -100,6 +100,7 @@ a {
   justify-content: space-between;
   max-height: 72px;
   padding-bottom: 0;
+  max-width: 768px;
 }
 .hamburger-menu {
   display: block;
@@ -137,7 +138,7 @@ a {
     ),
     url(../images/hero-logo-mobile.jpg);
 
-  padding: 72px 52px;
+  padding: 72px 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -149,7 +150,7 @@ a {
   text-align: center;
   min-width: 216px;
   max-width: 496px;
-  margin-bottom: 72px;
+  margin: 0 auto 72px auto;
 }
 
 .hero-section-button {
@@ -685,6 +686,9 @@ a {
     font-style: normal;
     margin-left: auto;
   }
+  .container {
+    max-width: 1158px;
+  }
   .navigation-item {
     display: flex;
     gap: 40px;
@@ -810,6 +814,7 @@ a {
   .footer-container {
     align-items: baseline;
     flex-direction: row;
+    gap: 0;
   }
   .footer-logo-container {
     margin-right: 120px;
@@ -865,6 +870,9 @@ a {
   .hamburger-menu {
     display: none;
   }
+  .container {
+    max-width: 768px;
+  }
   .adress {
     display: block;
     font-style: normal;
@@ -897,9 +905,14 @@ a {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-logo.jpg);
-    padding: 112px 136px;
+    padding: 112px 0;
   }
-
+  .hero-section-title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07143;
+    margin: 0 auto 36px auto;
+  }
   /* Description tablet */
   .description-list {
     flex-direction: row;
@@ -911,15 +924,17 @@ a {
   }
 
   /* Section team */
-
   .team-section-container {
-    padding: 0;
+    padding: 0 108px;
   }
   .section-team-list {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 64px 24px;
+  }
+  .team-list-item {
+    flex-basis: calc((100% - 24px) / 2);
   }
 
   /* Portfolio */
@@ -936,6 +951,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
+    justify-content: center;
   }
   .footer-logo-container {
     text-align: start;
